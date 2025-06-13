@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <Meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dragonballZ</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+<body>
+      <nav class="navbar navbar-light" style="background: linear-gradient(#5e2727bb, rgb(85, 30, 30),rgb(53, 17, 17))">
+        <div class="container" style="font-family: 'Feltpen', sans-serif;">
+            <a class="navbar-brand" href="index.html" style="color: white; ">Inicio</a>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="color: white; font-family: 'Madelis Script', sans-serif;"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parcial 1</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/haikyuu/monce01.php">Mostrar datos</a><br>
+                            <a class="dropdown-item" href="/haikyuu/monce02.php">Mostrar datos 2</a><br>
+                            <a class="dropdown-item" href="/haikyuu/monce03.php">Meter datos</a><br>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="color: white; font-family: 'Madelis Script', sans-serif;"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parcial 2</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/haikyuu/monce04.php">Mostrar </a><br>
+                            <a class="dropdown-item" href="/haikyuu/monce05.php">Mostrar datos</a><br>
+                           <a class="dropdown-item" href="https://moncerrat09.github.io/1-parcial-/haikyuu/monce06.html">pokedex</a><br>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" style="color: white; font-family: 'Madelis Script', sans-serif;"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Parcial 3</a>
+
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://moncerrat09.github.io/1-parcial-/haikyuu/monce07.html">Peliculas Api</a><br>
+                            <a class="dropdown-item" href="https://moncerrat09.github.io/1-parcial-/haikyuu/monce08.html">Dragon Ball</a><br>
+                            <a class="dropdown-item" href="https://moncerrat09.github.io/1-parcial-/haikyuu/monce09.html">Proyecto Fina</a><br>
+                        </div>
+                    </li>
+
+                    
+                </ul>
+            </div>
+          </nav>
+        </header>
+
+    <body>
+        <style>
+            :root{
+                --primary-color: #cd4631;
+                --secondary-color: #9e6240;
+                --terceary-color: #000000;
+                --color-cuarto: #ff7d00;
+                --color-quinto: #c44900;
+            }
+          body{
+          background-color: var(--color-cuarto);
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          margin: 0;
+          }
+          header{
+            padding: 16px;
+            display: flex;
+            justify-content: flex-end;
+            background-color: var(--color-quinto);
+            align-items: center;
+           
+          }
+          .search{
+            background-color: white;
+            border:5px solid var(--secondary-color);
+            border-radius: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            padding: 8px 15px;
+            color: var(--primary-color);
+          }
+          .search::placeholder{
+            color: var(--color-quinto);
+    
+    
+          }
+         .search:focus{
+          outline: none;
+          background-color: var(white);
+         }
+         main{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+         }
+         .personaje{
+          width: 400px;
+          margin: 15px;
+          background-color: var(--color-quinto);
+          box-shadow: 10px 15px 1px var(--color-secundario);
+          position: relative;
+          overflow: hidden;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+         }
+         .personaje img{
+          width: 80%;
+          height: 400px;
+         object-fit: contain;    
+         }
+         .personaje-info{
+          color: var(--terceary-color);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 15px;
+          padding: 0.8px 15px 15px;
+          letter-spacing: 5px;
+    
+    
+         }
+         .personaje-info h3{
+          color: var(--terceary-color);
+          margin-top: 0;
+         }
+         .personaje-info h1{
+          color: var(--terceary-color);
+          margin-top: 0;
+         }
+       
+       
+        .descripcion{
+          background-color: #ffffff;
+          padding: 15px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          max-height: 100%;
+          transform: translateY(101%);
+          overflow-y: auto;
+          transition: transform 1s ease-in;
+         
+        }
+        .personaje:hover .descripcion{
+          transform: translateY(0);
+        }
+    .logo {
+       width: 130px;
+        height: auto;
+        object-fit: contain;
+        transform: scale(1.5);
+    }
+        </style>
+    
+    
+      <header>
+         <form id="form">
+        <img src="dbz.png.png" alt="Dragon-Ball-Logo-1" class="dbz.png.png" style="width: 130px; height: 70px;">
+        <input type="text" id="search" class="search" placeholder="Busca tu personaje">
+    </form>
+      </header>
+      <main id="main"></main>
+        <script>
+           const API_URL = 'https://dragonball-api.com/api/characters';
+           
+           const main = document.getElementById('main');
+           const form = document.getElementById('form');
+           const search = document.getElementById('search');
+    
+    
+           getCharacters(API_URL)
+           
+           async function getCharacters(url){
+            const res = await fetch(url);
+            const data = await res.json();
+            showCharacters(data.items || data);
+           }
+          function showCharacters(characters){
+            main.innerHTML = '';
+    
+    
+            characters.forEach((char) => {
+     
+              const {id, name, image, ki, maxKi,  description, race} = char;
+                const charElements = document.createElement('div');
+                charElements.classList.add('personaje');
+                charElements.innerHTML = `
+                <img src = "${image}" alt="${name}">
+                <div class="personaje-info"> 
+                    <h1>${id}</h1>
+                    <h3>${name}</h3>
+                   <br>
+                   ${race}
+                        </div>
+                        <div class = "descripcion">
+                            <h3>Descripcion</h3>
+                            <p><strong>ki:</strong> ${ki}</p>
+                            <p><strong>max Ki::</strong> ${maxKi}</p>
+                            <p>${description || "sin descripcion disponible"}</p>
+    
+                        </div>`
+                    main.appendChild(charElements);
+            })}
+          
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault()
+                    const searchTerm = search.value.toLowerCase();
+                    if(searchTerm && searchTerm !== ''){
+                        getCharacters(API_URL + `?name=${searchTerm}`)
+                        search.value='';
+                    }else{
+                        window.location.reload();
+                    }
+                })
+    </script>
+    
+    </body>
+    </html>
